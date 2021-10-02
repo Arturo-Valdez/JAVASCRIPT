@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos JS</title>
+</head>
+<body>
+    <script>
+        //Tipos de datos
+            //Numerico - Entero/Integer y decimal/float
+            var edad = 26; //Entero
+            var decimal = 26.35;//float
+            alert(edad+ " "+ decimal);
+        //Operaciones
+            var suma = 5 + 30;
+            var multiplicar = 4*5;
+            alert(suma + " " + multiplicar);
+        
+        //String - cadenas de texto, caracteres.
+            var nombre = prompt('dame tu nombre');
+            var apellido = prompt('dame tu apellido');
+            var completo = nombre + " " + apellido;
+            alert(completo);
+
+        //Arrays - Conjunto de elementos
+            var amigos = ['Carlos', 'Jose', 'Fernando', 'Alejandro'];
+            alert(amigos);
+            document.write(amigos[0]);
+    
+        //Object - Estructuras mas compleja 'Este tipo de objetos se usan por ejemplo en plugins'
+            var objeto = {
+                color: "Black",
+                size: 12
+            }
+            alert(objeto);
+        
+        //Boolean - valores verdaderos o falsos
+            var boleano = true;
+            var boleano = false;
+            alert(boleano);
+
+        //Undefined - sin valor
+            var sinvalor;
+            alert(sinvalor);
+            document.write(sinvalor);
+
+        //Full - Vacio 'Se utiliza por ejemplo para borrar un valor'
+            var numero = 10;
+            alert(numero);
+            var numero = null;
+            alert(numero);
+
+        //Nan - Valor invalido
+        var texto1 = 'hola mundo';
+        document.write(texto1 * 3)
+        //alert(texto1);
+
+    </script>
+</body>
+</html>

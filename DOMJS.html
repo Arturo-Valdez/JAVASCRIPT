@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo de mi pagina web</h1>
+    <div id="subtitulo"></div>
+    <p class="miparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas repellendus, nihil quis ad laudantium velit repudiandae sapiente provident ex expedita. Fuga reiciendis voluptatibus, facilis natus ipsa quibusdam quisquam rem?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tenetur tempora hic tempore dolore, eaque quasi, ducimus, doloremque similique quaerat assumenda delectus. Itaque corporis facilis quo aspernatur possimus consectetur tempora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus libero rerum ipsa aspernatur amet voluptatem tempore impedit. Magni vel provident optio vitae quod natus deleniti recusandae laboriosam nulla aut.
+    </p>
+    <p id="elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas repellendus, nihil quis ad laudantium velit repudiandae sapiente provident ex expedita. Fuga reiciendis voluptatibus, facilis natus ipsa quibusdam quisquam rem?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tenetur tempora hic tempore dolore, eaque quasi, ducimus, doloremque similique quaerat assumenda delectus. Itaque corporis facilis quo aspernatur possimus consectetur tempora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus libero rerum ipsa aspernatur amet voluptatem tempore impedit. Magni vel provident optio vitae quod natus deleniti recusandae laboriosam nulla aut.
+    </p>
+    <p class="miparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas repellendus, nihil quis ad laudantium velit repudiandae sapiente provident ex expedita. Fuga reiciendis voluptatibus, facilis natus ipsa quibusdam quisquam rem?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tenetur tempora hic tempore dolore, eaque quasi, ducimus, doloremque similique quaerat assumenda delectus. Itaque corporis facilis quo aspernatur possimus consectetur tempora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus libero rerum ipsa aspernatur amet voluptatem tempore impedit. Magni vel provident optio vitae quod natus deleniti recusandae laboriosam nulla aut.
+    </p>
+
+    <script>
+        //Acceder a elementos con el DOM
+        var parrafos = document.getElementsByTagName("p");
+        var elemento1 = document.getElementById("elemento");
+        var elementoClase = document.getElementsByClassName("miparrafo");
+
+        //Crear un nuevo nodo en el Dom
+            //1. Crear elemento
+                var nuevo = document.createElement("h3");
+
+
+            //2. Crear el contenido
+                var contenido = document.createTextNode("Este es mi nuevo elemento");
+
+            //3. Juntar el elemento creado con el contenido
+                nuevo.appendChild(contenido);
+
+            //4. Agregar nuevo elemento creado en mi documento
+                document.getElementById("subtitulo").appendChild(nuevo);
+
+            //5. crear atributos
+                nuevo.setAttribute("class", "misubtitulo");
+
+
+
+    </script>
+</body>
+</html>

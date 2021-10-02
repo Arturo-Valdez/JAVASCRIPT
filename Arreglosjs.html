@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos JS</title>
+</head>
+<body>
+    <script>
+        //DECLARAR ARREGLO      0           1       2       3       4
+            var colores = ["Amarillo", "Verde", "Azul", "Rojo", "Gris"]
+
+        //METODOS MAS UTILIZADOS
+
+            //ACCEDER Y CAMBIAR ELEMENTOS DEL ARREGLO
+                //se agregan o cambian elementos
+                //colores[5]= "Negro";
+                //colores[6]= "Purpura";
+
+                //mostrar el color en la posicion 0
+                //document.write(colores[0]);
+
+                //mostrar todos los colores
+                //document.write(colores);
+
+                //METODO 1
+                //Me muestra la longitud de mi arreglo (cantidad)
+                /*var longitudarreglo = colores.length;//me muestra la longitud de mi arreglo (cantidad)
+                document.write(longitudarreglo);
+                colores[longitudarreglo] = 'purpura';//Me agrega datos al arreglo
+                document.write(colores);*/
+
+                //METODO 2
+                /*colores.push("rosa", "Blanco", "Naranja");//empujar y agregar elementos hasta el final
+                document.write(colores);
+                */
+
+            //ELIMINAR ELEMENTOS
+                /*colores.pop();//eliminar el ultimo elemento
+                document.write(colores);*/
+
+            //CONCATENAR ARREGLOS
+                /*var colores = ["Amarillo", "Verde", "Azul", "Rojo", "Gris"];
+                var colores2 = ["rosa", "naranja", "blanco", "purpura"];
+                var colorestotales = colores.concat(colores2);//concat agrega o concatena colores y colores 2
+                document.write(colorestotales);*/
+
+            //CAMBIAR ESTOLO DE ARREGLOS
+                /*var colores = ["Amarillo", "Verde", "Azul", "Rojo", "Gris"];
+                var arreglomejorado = colores.join(" | ");//separa o diceña el espaciado de los arreglos
+                document.write(arreglomejorado);*/
+
+            //ORDENAR ALFABETICAMENTE
+                var arregloordenado = colores.sort();
+                document.write(arregloordenado);
+
+    </script>
+</body>
+</html>

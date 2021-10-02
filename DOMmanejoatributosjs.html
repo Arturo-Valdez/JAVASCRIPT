@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de atributos DOM JS</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background: #7c7c7c;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #AAAAAA;
+        }
+        .amarillo{
+            background: #ffd400;
+            border: 1px solid #000;
+            transition: all 0.6s;
+            cursor: pointer;
+        }
+        .verde{
+            background: #00dd73;
+            border: 1px solid #000;
+            transition: all 0.6s;
+            cursor: pointer;
+            
+
+        }
+        .verde:hover{
+            background: #00dd00;
+            width: 600px;
+            height: 600px;
+        }
+        .amarillo:hover{
+            background: #fff300;
+            width: 600px;
+            height: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="contenedor">
+        <div id="elemento1"></div>
+        <div id="elemento2"></div>
+    </section>
+
+
+    <script>
+        var elemento1 = document.getElementById("elemento1");
+        var elemento2 = document.getElementById("elemento2");
+
+        //metodo1
+            //el elemento 2 obtiene el atributo clase verde que esta en css
+            elemento2.setAttribute("class", "verde");
+
+        //metodo2
+            //El elemento1 obtiene una clase llamada amarillo
+            elemento1.className="amarillo";
+            elemento1.id="otroid";//cambiar el id del elemento
+    </script>
+</body>
+</html>

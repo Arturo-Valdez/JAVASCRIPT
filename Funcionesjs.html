@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    
+    <script>
+        //Una funcion es un codigo que yo puedo reutilizar
+        /*function resta(valor1, valor2){
+            //instrucciones de nuestra funcion
+            var resultado = valor1-valor2;
+            return resultado;
+        }
+    document.write(resta(50, 30));*/
+
+        var valormin = function (valor1, valor2){
+            if(valor1 > valor2){
+                return valor2;
+            }else{
+                return valor1;
+            }
+        }
+        document.write(valormin(500, 80)+ "<br>");
+        document.write("<br>");
+        document.write(valormin(0, 80));
+    </script>
+
+</body>
+</html>

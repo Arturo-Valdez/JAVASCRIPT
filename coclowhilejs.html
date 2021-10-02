@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo While JS</title>
+</head>
+<body>
+    <script>
+        //Logica, el ciclo while las variables van por fuera
+        //Si conoces el limite utiliza CICLOS FOR
+        //Si no coneces el limite Utiliza CICLOS WHILE
+        var i = 0; 
+        var colores = ["Amarillo", "Rojo", "Azul", "Verde"];
+        var longitud = colores.length-1;//es menos uno para que no cuente la siguiente que no esta definido
+        
+        while(i<=longitud){
+            document.write(colores[i] +  "<br>")
+            i++;
+        }
+
+        //Ciclo dowhile ciclo abusador
+        //ejecuta una vez y luego pregunta
+        /*do{
+            //regla
+
+        }while(){
+
+        } */      
+    </script>
+</body>
+</html>
